@@ -1,1 +1,337 @@
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
 
+body{
+  width:100vw;
+  height:100vh;
+  background-color:hsl(210, 60%, 98%);
+   font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.container{
+  width:60vw;
+  height:170vh;
+  margin:0 auto;
+  margin-top:40px;
+  background-color:hsl(0, 0%, 100%);
+  border-radius:15px;
+}
+.header{
+  width:60vw;
+  height:auto;
+  display:flex;
+  margin:0 auto;
+
+}
+h3{
+  margin-left:20px;
+}
+button{
+  width:20px;
+  height:20px;
+  margin-left:10px;
+  margin-top:20px;
+  background-color:hsl(219, 85%, 26%);
+  color:hsl(0, 0%, 100%);
+  border-radius:5px;
+  text-align:center;
+  cursor:pointer;
+}
+ h4{
+   right:20%;
+   color:hsl(219, 85%, 26%);
+   cursor:pointer;
+   font-size: clamp(1rem, 2vmin, 1.5rem);
+   position:absolute;
+}
+.post-container{
+  width:55vw;
+  height:auto;
+  display:flex;
+  margin:0 auto;
+  background-color:hsl(211, 68%, 94%);
+  border-radius:5px;
+  margin-bottom:20px;
+}
+ .post-body{
+   max-width:70%;
+    height:auto;
+    background-color:transparent;
+   display:flex;
+  }
+img{
+  margin-left:20px;
+  margin-right:20px;
+  margin-top:20px;
+  margin-bottom:20px;
+  cursor:pointer;
+}
+.name{
+  white-space:nowrap;
+  font-weight:bold;
+  cursor:pointer;
+  color:hsl(224, 21%, 14%);
+}
+.name:hover{
+  color: hsl(219, 85%, 26%);
+}
+.post{
+  margin-left:5px;
+  color: hsl(219, 12%, 42%);
+}
+.point-link{
+  color: hsl(219, 85%, 26%);
+  cursor:pointer;
+  font-weight:bold;
+  margin-left:5px;
+}
+.chess{
+  padding:17px;
+}
+.circle{
+  width:10px;
+  height:10px;
+  background-color:red;
+  border-radius:50%;
+  margin-top:25px;
+  margin-left:10px;
+}
+.time{
+ margin-top:50px;
+ margin-left:11%;
+  position:absolute;
+  color:hsl(219, 14%, 63%);
+}
+.message{
+  background-color:hsl(0, 0%, 100%);
+}
+.message-container{
+  width:75%;
+  height:90px;
+  margin-left:21%;
+  margin-top:-65px;
+  background-color:hsl(205, 33%, 90%);
+ text-align:center;
+  border-radius:5px;
+  margin-bottom:20px;
+ cursor:pointer;
+}
+.message-post{
+  padding:10px;
+    color: hsl(219, 12%, 42%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+@media screen and (max-width: 1054px) {
+  h4 {
+    font-size: 1rem;
+    margin-left:20%;
+  }
+  .circle{
+    margin-right:20px;
+  }
+  .time{
+    margin-top:90px;
+    margin-left:140px;
+  }
+  .message-container{
+    margin-top:10px;
+  }
+  .container{
+    height:auto;
+  }
+}
+@media screen and (max-width: 854px) {
+  h4 {
+    font-size: 1rem;
+    margin-left:20%;
+  }
+  .container{
+     width:90%;
+    height:auto;
+  }
+  .post-container {
+    width:95%;
+    height:auto;
+    display: flex;  
+  }
+  .post-body{
+    width:70%;
+    height:20vh;
+    background-color:transparent;
+  }
+  p,span{
+    margin-top:10px;
+  }
+  .circle{
+    margin-right:10px;
+  }
+  .name{
+    white-space: nowrap;
+  }
+  .time{
+    margin-top:100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h4 {
+    font-size: 1rem;
+    margin-left:20%;
+  }
+}
+@media screen and (max-width: 558px) {
+  h4 {
+    font-size: 1rem;
+    margin-left:30px;
+  }
+  .container{
+     width:90%;
+    height:auto;
+  }
+  .post-container {
+    width:95%;
+    height:auto;
+    display: flex;  
+  }
+  .post-body{
+    width:70%;
+    height:20vh;
+    background-color:transparent;
+  }
+  p,span{
+    margin-top:10px;
+  }
+  .circle{
+    margin-right:10px;
+  }
+  .name{
+    white-space: nowrap;
+  }
+  .time{
+    margin-top:100px;
+  }
+  .chess-img{
+    margin-left:-10px;
+    
+  }
+}
+@media screen and (max-width: 528px) {
+  h4 {
+    font-size: 1rem;
+    margin-right:-65px;
+  }
+  
+  .container{
+     width:90%;
+    height:auto;
+  }
+  .message-container{
+    height:120px;
+  }
+  .post-container {
+    width:95%;
+    height:auto;
+    display: flex;  
+  }
+  .post-body{
+    width:70%;
+    height:20vh;
+    background-color:transparent;
+  }
+  p,span{
+    margin-top:10px;
+  }
+  .circle{
+    margin-right:10px;
+  }
+  .name{
+    white-space: nowrap;
+  }
+  .time{
+    margin-top:100px;
+  }
+  .chess-img{
+    margin-left:-10px;
+    margin-top:40px;
+  }
+}
+@media screen and (max-width: 498px) {
+  h4 {
+    font-size: 1rem;
+    margin-right:-65px;
+  }
+  
+  .container{
+     width:90%;
+    height:auto;
+  }
+  .message-container{
+    height:120px;
+  }
+  .post-container {
+    width:95%;
+    height:auto;
+    display: flex;  
+  }
+  .post-body{
+    width:70%;
+    height:20vh;
+    background-color:transparent;
+  }
+  p,span{
+    margin-top:10px;
+  }
+  .circle{
+    margin-right:10px;
+  }
+  .name{
+    white-space: nowrap;
+  }
+  .time{
+    margin-top:100px;
+  }
+  .chess-img{
+    margin-left:-45px;
+    margin-top:60px;
+  }
+}
+@media screen and (max-width: 498px) {
+  h4 {
+    font-size: 1rem;
+    margin-right:-65px;
+  }
+  
+  .container{
+     width:90%;
+    height:auto;
+  }
+  .message-container{
+    height:120px;
+  }
+  .post-container {
+    width:95%;
+    height:auto;
+    display: flex;  
+  }
+  .post-body{
+    width:70%;
+    height:20vh;
+    background-color:transparent;
+    overflow:hidden;
+  }
+  p,span{
+    margin-top:10px;
+  }
+  .circle{
+    margin-right:10px;
+  }
+  .name{
+    white-space: nowrap;
+  }
+  .time{
+    margin-top:100px;
+  }
+  .chess-img{
+    margin-left:-45px;
+    margin-top:70px;
+  }
+}
