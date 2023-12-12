@@ -2,50 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Notifications page</title>
-
+ <link rel="stylesheet" type="text/css" href="style.css" />
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Notifications 3
-
-  Mark all as read
-
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
-
-  Angela Gray followed you
-  5m ago
-
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
-
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
-
-  Kimberly Smith commented on your picture
-  1 week ago
-
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
+<div class="container">
+  <div class="header">
+  <h3>Notifications </h3><button>3</button> 
+    <h4>Mark all as read</h4>
+  </div>
+  <div class="post-container">
+    <img src="https://raw.githubusercontent.com/zaklinaradivojevic/-notifications-page/main/notifications-page-main/assets/images/avatar-mark-webber.webp" alt="avatar">
+    <div class="post-body">
+    <p class="name">Mark Webber</p>
+    <p class="post">reacted to your recent post <span class="point-link">My first tournament today!</span></p><span class="circle"></span>
+    </div>
+    <p class="time">1m ago</p>
+  </div>
+  <div class="post-container">
+    <img src="https://raw.githubusercontent.com/zaklinaradivojevic/-notifications-page/main/notifications-page-main/assets/images/avatar-angela-gray.webp" alt="logo">
+    <div class="post-body">
+     <p class="name">Angela Gray</p>
+    <p class="post">followed you</p><span class="circle"></span>
+    </div>
+    <p class="time"> 5m ago</p>
+  </div>
+  <div class="post-container">
+    <img src="https://raw.githubusercontent.com/zaklinaradivojevic/-notifications-page/main/notifications-page-main/assets/images/avatar-jacob-thompson.webp" alt="logo">
+    <div class="post-body">
+     <p class="name">Jacob Thompson</p>
+    <p class="post"> has joined your group <span class="point-link chess">Chess Club</span><span class="circle"></span></p>
+    </div>
+    <p class="time"> 1 day ago</p>
+  </div>
+<div class="post-container message">
+  <img src="https://raw.githubusercontent.com/zaklinaradivojevic/-notifications-page/main/notifications-page-main/assets/images/avatar-rizky-hasanuddin.webp" alt="logo">
+  <div class="post-body">
+  <p class="name"> Rizky Hasanuddin </p> <p class="post">sent you a private message</p>
+  </div>
+  <p class="time"> 5 days ago</p>
+  </div>
+  <div class="message-container">
+ <p class="message-post"> Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+   I'm already having lots of fun and improving my game.</p>
+  </div>
+ 
+  <div class="post-container">
+    <img src="https://raw.githubusercontent.com/zaklinaradivojevic/-notifications-page/main/notifications-page-main/assets/images/avatar-kimberly-smith.webp" alt="logo">
+    <div class="post-body">
+    <p class="name">Kimberly Smith</p>
+    <p class="post">commented on your picture</p>
+    <img class="chess-img" src="https://raw.githubusercontent.com/zaklinaradivojevic/-notifications-page/main/notifications-page-main/assets/images/image-chess.webp" alt="chess img">
+    </div>
+  <p class="time"> 1 week ago<p>
+  </div>
+  <div class="post-container"><img src="https://raw.githubusercontent.com/zaklinaradivojevic/-notifications-page/main/notifications-page-main/assets/images/avatar-nathan-peterson.webp" alt="logo">
+    <div class="post-body">
+ <p class="name">Nathan Peterson </p>
+    <p class="post"> reacted to your recent post 5 end-game strategies to increase your win rate</p>
+    </div>
+    <p class="time">2 weeks ago</p>
+  </div>
+  <div class="post-container">
+    <img src="https://raw.githubusercontent.com/zaklinaradivojevic/-notifications-page/main/notifications-page-main/assets/images/avatar-anna-kim.webp" alt="logo">
+    <div class="post-body">
+    <p class="name">Anna Kim </p>
+    <p class="post">left the group Chess Club</p>
+    </div>
+    <p class="time">2 weeks ago</p>
+  </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
